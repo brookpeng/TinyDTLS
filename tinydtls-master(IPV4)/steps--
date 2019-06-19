@@ -1,9 +1,7 @@
 Goto mainfolder Execute : "$make" in folder
 Go to tests and execute : "$make" in folder
-We need to make changes in /test/makefile as follows to use PSK: 
-
-	CFLAGS  := -DLOG_LEVEL_DTLS=$(LOG_LEVEL_DTLS) -I. -I.. -I../$(DTLS_SUPPORT) 
-	CFLAGS  := -DLOG_LEVEL_DTLS=$(LOG_LEVEL_DTLS) -I. -I.. -I../$(DTLS_SUPPORT) -i DTLS_PSK
+We need to make changes in dtls-config.h as follows to use PSK: 
+	Open header file "dtls-config.h" : Disable DTLS_ECC and enable DTLS_PSK
 
 
 Running :
