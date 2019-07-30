@@ -4,3 +4,17 @@ Tinydtls is a library for Datagram Transport Layer Security (DTLS) covering both
 
 
 Learn file discriptors at : https://gist.github.com/Alexey-N-Chernyshov/4634731
+
+
+Run: 
+./configure
+make
+
+Goto tests :
+make
+
+./dtls-server
+
+./dtls-client 127.0.0.1
+
+
